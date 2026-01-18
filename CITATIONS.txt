@@ -1,0 +1,208 @@
+=========================================
+PFAM ANALYSIS PIPELINE - CITATIONS
+=========================================
+
+This pipeline uses the following tools and databases.
+All citations are REQUIRED when publishing results.
+
+=========================================
+1. HMMER - Sequence Analysis Tool
+=========================================
+
+Eddy SR (2011)
+"Accelerated profile HMM searches"
+PLOS Computational Biology 7(10): e1002195
+DOI: 10.1371/journal.pcbi.1002195
+
+Finn RD, Clements J, Eddy SR (2011)
+"HMMER web server: interactive sequence similarity searching"
+Nucleic Acids Research 39: W29-W37
+DOI: 10.1093/nar/gkr367
+
+Website: http://hmmer.org/
+Developer: Sean Eddy Lab, Harvard University
+License: BSD-3-Clause
+
+=========================================
+2. Pfam - Protein Families Database
+=========================================
+
+Mistry J, Chuguransky S, Williams L, Qureshi M, Salazar GA, 
+Sonnhammer ELL, Tosatto SCE, Paladin L, Raj S, Richardson LJ, 
+Finn RD, Bateman A (2021)
+"Pfam: The protein families database in 2021"
+Nucleic Acids Research 49(D1): D412-D419
+DOI: 10.1093/nar/gkaa913
+
+Previous major release:
+
+El-Gebali S, Mistry J, Bateman A, Eddy SR, Luciani A, Potter SC, 
+Qureshi M, Richardson LJ, Salazar GA, Smart A, Sonnhammer ELL, 
+Hirsh L, Paladin L, Piovesan D, Tosatto SCE, Finn RD (2019)
+"The Pfam protein families database in 2019"
+Nucleic Acids Research 47(D1): D427-D432
+DOI: 10.1093/nar/gky995
+
+Website: https://pfam.xfam.org/
+FTP: https://ftp.ebi.ac.uk/pub/databases/Pfam/
+Maintained by: EMBL-EBI (European Bioinformatics Institute)
+License: Creative Commons Zero (CC0)
+
+Pipeline uses: Pfam 38.1 (January 2026)
+
+=========================================
+3. InterPro (Pfam parent resource)
+=========================================
+
+Paysan-Lafosse T, Blum M, Chuguransky S, Grego T, Pinto BL, 
+Salazar GA, Bileschi ML, Bork P, Bridge A, Colwell L, 
+Gough J, Haft DH, Letunić I, Marchler-Bauer A, Mi H, 
+Natale DA, Orengo CA, Pandurangan AP, Rivoire C, Sigrist CJA, 
+Sillitoe I, Thanki N, Thomas PD, Tosatto SCE, Wu CH, 
+Bateman A (2023)
+"InterPro in 2022"
+Nucleic Acids Research 51(D1): D418-D427
+DOI: 10.1093/nar/gkac993
+
+Website: https://www.ebi.ac.uk/interpro/
+
+=========================================
+CITATION
+=========================================
+
+"Protein domain analysis was performed using HMMER v3.4
+(Eddy, 2011) against the Pfam database v38.1 (Mistry et al.,
+2021) with an E-value threshold of 0.01. Analysis was 
+conducted using the pfam Docker container pipeline."
+
+=========================================
+ACKNOWLEDGMENT
+=========================================
+
+"We acknowledge the HMMER and Pfam teams for developing and
+maintaining these essential bioinformatics resources."
+
+=========================================
+ADDITIONAL SOFTWARE COMPONENTS
+=========================================
+
+Ubuntu Linux 22.04 LTS
+  Copyright Canonical Ltd.
+  https://ubuntu.com/
+
+Docker Containerization
+  Copyright Docker, Inc.
+  https://www.docker.com/
+
+GNU Compiler Collection (GCC)
+  Free Software Foundation
+  https://gcc.gnu.org/
+
+GNU Make
+  Free Software Foundation
+  https://www.gnu.org/software/make/
+
+GNU Wget
+  Free Software Foundation
+  https://www.gnu.org/software/wget/
+
+=========================================
+COMPLETE REFERENCE LIST (BibTeX format)
+=========================================
+
+@article{Eddy2011,
+  author = {Eddy, Sean R.},
+  title = {Accelerated Profile HMM Searches},
+  journal = {PLOS Computational Biology},
+  year = {2011},
+  volume = {7},
+  number = {10},
+  pages = {e1002195},
+  doi = {10.1371/journal.pcbi.1002195}
+}
+
+@article{Finn2011,
+  author = {Finn, Robert D. and Clements, Jody and Eddy, Sean R.},
+  title = {HMMER web server: interactive sequence similarity searching},
+  journal = {Nucleic Acids Research},
+  year = {2011},
+  volume = {39},
+  pages = {W29-W37},
+  doi = {10.1093/nar/gkr367}
+}
+
+@article{Mistry2021,
+  author = {Mistry, Jaina and Chuguransky, Sara and Williams, Lowri and 
+            Qureshi, Matloob and Salazar, Gustavo A. and Sonnhammer, 
+            Erik L. L. and Tosatto, Silvio C. E. and Paladin, Lisanna and 
+            Raj, Shriya and Richardson, Lorna J. and Finn, Robert D. and 
+            Bateman, Alex},
+  title = {Pfam: The protein families database in 2021},
+  journal = {Nucleic Acids Research},
+  year = {2021},
+  volume = {49},
+  number = {D1},
+  pages = {D412-D419},
+  doi = {10.1093/nar/gkaa913}
+}
+
+@article{ElGebali2019,
+  author = {El-Gebali, Sara and Mistry, Jaina and Bateman, Alex and 
+            Eddy, Sean R. and Luciani, Aur{\'{e}}lien and Potter, 
+            Simon C. and Qureshi, Matloob and Richardson, Lorna J. and 
+            Salazar, Gustavo A. and Smart, Alfredo and Sonnhammer, 
+            Erik L. L. and Hirsh, Layla and Paladin, Lisanna and 
+            Piovesan, Damiano and Tosatto, Silvio C. E. and Finn, 
+            Robert D.},
+  title = {The Pfam protein families database in 2019},
+  journal = {Nucleic Acids Research},
+  year = {2019},
+  volume = {47},
+  number = {D1},
+  pages = {D427-D432},
+  doi = {10.1093/nar/gky995}
+}
+
+@article{PaysanLafosse2023,
+  author = {Paysan-Lafosse, Typhaine and Blum, Matthias and 
+            Chuguransky, Sara and others},
+  title = {InterPro in 2022},
+  journal = {Nucleic Acids Research},
+  year = {2023},
+  volume = {51},
+  number = {D1},
+  pages = {D418-D427},
+  doi = {10.1093/nar/gkac993}
+}
+
+=========================================
+LICENSE INFORMATION
+=========================================
+
+HMMER: BSD-3-Clause License
+  Free for academic and commercial use
+  
+Pfam: Creative Commons Zero (CC0)
+  Free to use, distribute, and modify
+
+Pipeline Container: Version 1.01
+  [need to specify license for this product here]
+
+=========================================
+SUPPORT & CONTACT
+=========================================
+
+HMMER Support:
+  Email: hmmer-help@seas.harvard.edu
+  Issues: https://github.com/EddyRivasLab/hmmer/issues
+
+Pfam Support:
+  Email: pfam-help@ebi.ac.uk
+  Help: https://pfam-docs.readthedocs.io/
+
+Container support:
+Email: <add_here>
+
+=========================================
+Last Updated: January 2026
+=========================================
