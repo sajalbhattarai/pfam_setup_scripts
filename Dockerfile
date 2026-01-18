@@ -4,13 +4,22 @@ FROM ubuntu:22.04
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install dependencies
+# Install dependencies and build HMMER from source
 RUN apt-get update && apt-get install -y \
     wget \
     curl \
-    hmmer \
     gzip \
-    && rm -rf /var/lib/apt/lists/*
+    build-essential \
+    && rm -rf /var/lib/apt/lists/* \
+    && cd /tmp \
+    && wget http://eddylab.org/software/hmmer/hmmer-3.4.tar.gz \
+    && tar xzf hmmer-3.4.tar.gz \
+    && cd hmmer-3.4 \
+    && ./configure --prefix=/usr/local \
+    && make \
+    && make install \
+    && cd / \
+    && rm -rf /tmp/hmmer-3.4*
 
 # Set working directory
 WORKDIR /pfam
